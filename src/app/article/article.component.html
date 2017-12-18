@@ -1,0 +1,31 @@
+<div>
+
+  <div class="value">
+    {{article.votes}}
+
+  </div>
+  <div class="label">
+    Points
+  </div>
+
+  <div>
+    <a href="{{article.link}}">
+      {{article.title}}
+    </a>
+    <!-- <div>({{article.domain}})</div> -->
+
+    <div>
+      <ul>
+        <li>
+          <a href (click)="voteUp()">UpVote</a>
+        </li>
+        <li>
+          <a href (click)="voteDown()">DownVote</a>
+        </li>
+
+      </ul>
+
+    </div>
+
+  </div>
+</div>
